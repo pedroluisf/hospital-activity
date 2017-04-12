@@ -1,0 +1,23 @@
+{
+  "name": "activity",
+  "authors": [
+    "Pedro Luis Ferreira <pedroluisf@gmail.com>"
+  ],
+  "description": "Hospital Activity Trial",
+  "main": "\"directory\" : \"public/lib\"",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "^2.3.3",
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "components-font-awesome": "^4.7.0",
+    "jquery.easing": "^1.3.1"
+  }
+}

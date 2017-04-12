@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hospital Trial</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="styles/freelancer.css" />
+
+    <!-- JS Grid CSS -->
+    <link type="text/css" rel="stylesheet" href="lib/jsgrid/dist/jsgrid.min.css" />
+    <link type="text/css" rel="stylesheet" href="lib/jsgrid/dist/jsgrid-theme.min.css" />
+
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="styles/site.css" />
+
+    <!-- Custom Fonts -->
+    <link href="lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+    <div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Hospital</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#patients">Patients</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#activities">Activities</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <h1 class="name">Hospital</h1>
+                        <hr class="star-light">
+                        <span class="skills">Activities Trial</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Patients Grid Section -->
+    <section id="patients">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Patients</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div id="spinner" class="col-lg-12"><img class="center-block" src="img/giphy.gif"/></div>
+                <div id="patientsGrid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="success" id="activities">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Activities</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#activityModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/sleeping.png" class="img-responsive" alt="Sleeping">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#activityModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/stationary.png" class="img-responsive" alt="Stationary">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#activityModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/walking.png" class="img-responsive" alt="Walking">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#activityModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cycling.png" class="img-responsive" alt="Cycling">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#activityModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/running.png" class="img-responsive" alt="Running">
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#activityModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/swimming.png" class="img-responsive" alt="Swimming">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-2">
+                    </div>
+                    <div class="footer-col col-md-8">
+                        <h3>Activities Project</h3>
+                        <p>The purpose of this challenge is to demonstrate how to:</p>
+                        <div class="col-md-2">
+                        </div>
+                        <div class="text-left col-md-6">
+                            <ul>
+                                <li>write and structure a simple web application</li>
+                                <li>present simple data for interpretation by a human</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-col col-md-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Thank you for the opportunity
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Patient Modal -->
+    <div class="portfolio-modal modal fade" id="patientModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2 id="name">name goes here</h2>
+                            <hr class="star-primary">
+                            <h3>Summary of Activities by Intensity</h3>
+                            <br/>
+                            <div class="row">
+                                <div class="text-left col-md-3">&nbsp;</div>
+                                <div class="text-left col-md-4">
+                                    <p>None:</p>
+                                    <p>Low:</p>
+                                    <p>Moderate:</p>
+                                    <p>Vigorous:</p>
+                                </div>
+                                <div class="text-left col-md-4">
+                                    <p><span id="none"></span> hours</p>
+                                    <p><span id="low"></span> hours</p>
+                                    <p><span id="moderate"></span> hours</p>
+                                    <p><span id="vigorous"></span> hours</p>
+                                </div>
+                                <div class="text-left col-md-2">&nbsp;</div>
+                            </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Activities Modals -->
+    <div class="portfolio-modal modal fade" id="activityModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Sleeping</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/sleeping.png" class="img-responsive img-centered" alt="">
+                            <p>Sleeping is considered an activity with no intensity</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="activityModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Stationary</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/stationary.png" class="img-responsive img-centered" alt="">
+                            <p>Stationary is considered an activity with a "low" intensity</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="activityModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Walking</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/walking.png" class="img-responsive img-centered" alt="">
+                            <p>Walking is considered an activity with a "moderate" intensity</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="activityModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Cycling</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/cycling.png" class="img-responsive img-centered" alt="">
+                            <p>Cycling is considered an activity with a "moderate" intensity</p>
+                            <ul class="list-inline item-details">
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="activityModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Running</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/running.png" class="img-responsive img-centered" alt="">
+                            <p>Running is considered an activity with a "vigorous" intensity</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="activityModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Swimming</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/swimming.png" class="img-responsive img-centered" alt="">
+                            <p>Swimming is considered an activity with a "vigorous" intensity</p>
+                            <button id="btnSubmit" type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="lib/jquery.easing/js/jquery.easing.min.js"></script>
+
+    <!-- Theme JS -->
+    <script src="scripts/freelancer.js"></script>
+
+    <!-- JS Grid JS -->
+    <script type="text/javascript" src="lib/jsgrid/dist/jsgrid.min.js"></script>
+
+    <!-- Site JS -->
+    <script src="lib/requirejs/require.js"></script>
+    <script src="scripts/config.js"></script>
+
+    <!-- PROD
+    <script src="scripts/main.js"></script>
+    <script>
+        require(['main.js']);
+    </script>
+    -->
+    <!-- DEV  -->
+    <script>
+        requirejs(["main"]);
+    </script>
+
+</body>
+</html>
